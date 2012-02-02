@@ -67,7 +67,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : vicmargar-github
     livefyre :
       site_id : 123
     intensedebate :
