@@ -5,7 +5,7 @@ title: Víctor Martínez García
 {% include JB/setup %}
 
 
-## Posts
+## My Posts
 
 <ul class="posts">
   {% for post in site.posts %}
