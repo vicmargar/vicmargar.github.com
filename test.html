@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    </head>
+    <body>
+    	<h1>Hello!</h1>
+    	<form action="#">
+    		<input type="filepicker" name="myName" data-fp-services="COMPUTER,FACEBOOK,GMAIL,DROPBOX" onchange="finished_upload(event);"/>
+    	</form>
+    	<ul id="photos">
+    	</ul>
+
+    	<script type="text/javascript" src="//api.filepicker.io/v1/filepicker.js"></script>
+    	<script type="text/javascript">
+		var key = "Al0AlFJ2ySKW2VdO3y1d5z";
+		filepicker.setKey(key);
+
+		function finished_upload(event){
+			console.log(event.fpfile);
+			$('#photos').append("<li><img src='" + event.fpfile.url + "'/></li>");
+		}
+    	</script>
+    </body>
+</html>
